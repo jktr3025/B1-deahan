@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul,ol,li{
+    list-style: none;
+}
+body{
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 14px;
+    font-family: "돋움";
+}
+#wrap{
+    width: 100%;
+}
+
+#header{
+    height: 100px;
+    /* background-color: rosybrown; */
+}
+
+.header_inner{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    /* background-color: antiquewhite; */
+}
+.logo{
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+.logo a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    padding-top: 30px;
+}
+
+.nav{
+    float: right;
+    margin-top: 25px;
+}
+.main{}
+.main > li{
+    float: left;
+    position: relative;
+
+}
+.main > li > a{
+    display: block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: lightblue;
+    color: white;
+    font-weight: bold;
+    border-bottom: 5px solid lightblue ;
+    transition: all 0.3s;
+}
+.main > li:hover > a{
+    border-bottom: 5px solid navy ;
+    color: navy;
+
+}
+
+.sub{
+    position: absolute;
+    left: 0;
+    top:  50px;
+    width: 150px;
+    height: 160px;
+    background-color: cornflowerblue;
+    display: none;
+}
+.sub li{}
+.sub li a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.sub li a:hover{
+    background-color: white;
+    color: navy;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#section{
+    height: 500px;
+    background-color: dodgerblue;
+}
+.section_inner{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: chartreuse;
+}
+
+#footer{
+    height: 100px;
+    background-color: skyblue;
+}
+.footer_inner{
+
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: tan;
+} 
