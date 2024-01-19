@@ -17,6 +17,7 @@ body{
     color: #333333;
     font-size: 14px;
     font-family: "돋움";
+    position: relative;
 }
 #wrap{
     width: 100%;
@@ -81,6 +82,7 @@ body{
     height: 160px;
     background-color: cornflowerblue;
     display: none;
+    z-index: 5;
 }
 .sub li{}
 .sub li a{
@@ -94,36 +96,223 @@ body{
     color: navy;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+/* section */
 #section{
     height: 500px;
-    background-color: dodgerblue;
+    /* background-color: dodgerblue; */
 }
 .section_inner{
     width: 1200px;
     height: 500px;
     margin: 0 auto;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
+}
+.viewer{
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
 }
 
+.move{
+    width: 3600px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.move li{
+    width: 1200px;
+    height: 300px;
+    float: left;
+
+}
+.move li a{}
+.move li a img{}
+
+.container{
+    width: 1200px;
+    height: 200px;
+    /* float 부모 높이 사라지는데 높이를 주거나 overflow: hidden; */
+}
+.container>div{
+    float: left;
+    height: 200px;
+    width: 390px;
+    /* border: 1px rebeccapurple solid; */
+    position: relative;
+
+}
+
+.cont1{}
+.cont1 h2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid navy;
+    border-bottom-color: #ffffff;
+    background-color: #ddd;
+    font-size: 20px; 
+    cursor: pointer;
+}
+.cont1 h2.on{
+    z-index: 6;
+    background-color: #ffffff;
+}
+.gallery h2{
+    left: 100px;
+}
+.cont1 ul{
+    width: 390px;
+    height: 166px;
+    background-color: #ffffff;
+    border: 1px solid navy;
+    position: absolute;
+    left: 0;
+    top: 34px;
+    padding-top: 7px;
+    z-index: 3;
+}
+.notice ul{
+    padding: 10px;
+
+}
+.notice ul li{
+    height: 28px;
+    line-height: 28px;
+}
+.notice ul li a{
+    display: block;
+    width: 75%;
+    float: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.notice ul li a:hover{
+    background-color: lightblue;
+}
+.notice ul li span{
+    float: right;
+}
+
+.gallery ul{
+    text-align: center;
+    padding-top: 22px;
+    display: none;
+}
+.gallery ul li{
+    display: inline;
+}
+.cont2{
+    margin: 0 15px;
+}
+.cont3{
+}
+
+.title{
+    font-size: 20px;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid navy;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom-color: #ffffff ;
+    z-index: 5;
+}
+.cont_img{
+    width: 390px;
+    height: 166px;
+    background-color: #ffffff;
+    border: 1px solid navy;
+    position: absolute;
+    left: 0;
+    top: 34px;
+    padding-top: 7px;
+}
+
+.cont_img img{
+    width: 100%;
+
+}
+/*  footer*/
 #footer{
     height: 100px;
-    background-color: skyblue;
+    /* background-color: skyblue; */
 }
 .footer_inner{
 
     width: 1200px;
     height: 100px;
     margin: 0 auto;
-    background-color: tan;
+    /* background-color: tan; */
 } 
+.f_logo{
+    float: left;
+    width: 200px;
+    height: 100px;
+    padding-top: 30px;
+}
+.f_right{
+    width: 1000px;
+    height: 100px;
+    float: left;
+}
+.f_menu{
+    height: 50px;
+    border-bottom: 1px dotted #333;
+}
+.f_menu ul{
+    text-align: center;
+}
+.f_menu ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 15px;
+}
+.f_menu ul li:hover{
+    text-decoration: underline;
+}
+.f_menu ul li a{}
+.copy{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+/* pop */
+.pop{
+    width: 400px;
+    height: 500px;
+    border: 5px double navy;
+    background-color: #ffffff;
+    position: absolute;
+    left: 350px;
+    top: 150px;
+    z-index: 100;
+    padding: 20px;
+    display: none;
+}
+.pop h3{
+    text-transform: uppercase;
+    margin: 20px 0;
+    text-align: center;
+}
+.pop p{
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+.close{
+    float: right;
+    border: none;
+    background-color: lightblue;
+    padding: 5px 10px;
+}
